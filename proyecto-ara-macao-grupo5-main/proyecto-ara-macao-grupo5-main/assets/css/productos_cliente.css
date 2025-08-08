@@ -1,0 +1,102 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.filtro-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.filtro-form select,
+.filtro-form button {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.producto-card {
+  background-color: #fafafa;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.producto-card img {
+  max-width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.producto-card h3 {
+  margin: 10px 0 5px;
+  color: #444;
+}
+
+.producto-card p {
+  margin: 5px 0;
+}
+
+.producto-card form {
+  margin-top: 10px;
+}
+
+.producto-card input[type="number"] {
+  width: 60px;
+  padding: 4px;
+  margin-right: 5px;
+}
+
+.btn-agregar {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-agregar:hover {
+  background-color: #219150;
+}
+
+.resenas {
+  margin-top: 10px;
+  text-align: left;
+  font-size: 0.9em;
+  background: #fff;
+  border: 1px dashed #ddd;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.resenas .comentario {
+  margin-bottom: 8px;
+}

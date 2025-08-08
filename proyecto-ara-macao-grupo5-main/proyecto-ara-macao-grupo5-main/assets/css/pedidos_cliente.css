@@ -1,0 +1,95 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.pedidos-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pedidos-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+thead {
+  background-color: #f0f0f0;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  font-size: 15px;
+}
+
+tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+td.estado {
+  font-weight: bold;
+  text-transform: capitalize;
+  border-radius: 5px;
+  padding: 6px;
+  display: inline-block;
+}
+
+.estado-pendiente {
+  color: #e67e22;
+  background-color: #fdf2e9;
+}
+
+.estado-en_produccion {
+  color: #2980b9;
+  background-color: #eaf2f8;
+}
+
+.estado-enviado {
+  color: #8e44ad;
+  background-color: #f5eef8;
+}
+
+.estado-entregado {
+  color: #27ae60;
+  background-color: #eafaf1;
+}
+
+.estado-cancelado {
+  color: #c0392b;
+  background-color: #fdecea;
+}
+
+@media (max-width: 768px) {
+  th,
+  td {
+    font-size: 13px;
+    padding: 8px;
+  }
+}
+.btn-cancelar {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-cancelar:hover {
+  background-color: #c0392b;
+}
